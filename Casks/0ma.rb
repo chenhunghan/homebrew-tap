@@ -4,7 +4,7 @@ cask "0ma" do
 
   url "https://github.com/chenhunghan/0ma/releases/download/v#{version}/0ma_#{version}_aarch64.dmg"
   name "0ma"
-  desc "A Tauri App"
+  desc "Desktop GUI for managing Lima instances and Kubernetes clusters"
   homepage "https://github.com/chenhunghan/0ma"
 
   depends_on arch: :arm64
