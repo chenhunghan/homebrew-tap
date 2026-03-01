@@ -1,13 +1,13 @@
 cask "0ma" do
-  version "0.3.0"
+  version "0.4.0"
 
   on_arm do
-    sha256 "9156024256fef07bbb5f64d8158b089df3278481a3d5be7f465c3c525bd91ae8"
+    sha256 "57acdd607fc553464ba89163d10b8ab376490d3786b1e5689ef5dec3120362b8"
     url "https://github.com/chenhunghan/0ma/releases/download/v#{version}/0ma_#{version}_aarch64.dmg"
   end
 
   on_intel do
-    sha256 "acdf7e63656d896268c0e1423c38606a4e61e2033db7d55d93301124642afa9b"
+    sha256 "d029218e8f4a79c0f72bd9220693835d4c7aadc5bef1f9c423f56a9139a673f8"
     url "https://github.com/chenhunghan/0ma/releases/download/v#{version}/0ma_#{version}_x64.dmg"
   end
 
@@ -16,4 +16,8 @@ cask "0ma" do
   homepage "https://github.com/chenhunghan/0ma"
 
   app "0ma.app"
+
+  postflight do
+    system "xattr", "-cr", "#{appdir}/0ma.app"
+  end
 end
