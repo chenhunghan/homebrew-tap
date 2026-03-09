@@ -1,13 +1,13 @@
 cask "yolo" do
-  version "0.2.0"
+  version "0.3.0"
 
   on_arm do
-    sha256 "4cd1366052a596e92fde1e1512219e4edcc4a9c988b4ce0cde180cd9745a1edd"
+    sha256 "769ac8414bf079575122084d7f9f9e83d27fc0dc777aeabf2ef3f19224a0cf07"
     url "https://github.com/chenhunghan/yolo/releases/download/v#{version}/yolo_#{version}_aarch64.dmg"
   end
 
   on_intel do
-    sha256 "ec4e8c7ec68348d38afcc1158d033683a44a6efa0f3f207b85a1988fa5b44b59"
+    sha256 "e1ee5c3328ab72dbeba9c9a5a49e363a73fc05d61867da1cdf92fa26b287edbe"
     url "https://github.com/chenhunghan/yolo/releases/download/v#{version}/yolo_#{version}_x64.dmg"
   end
 
