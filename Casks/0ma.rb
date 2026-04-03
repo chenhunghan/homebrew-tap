@@ -1,13 +1,13 @@
 cask "0ma" do
-  version "0.4.5"
+  version "0.5.2"
 
   on_arm do
-    sha256 "ab2a5e9dc027c848f4de3700753eacd1fbe09167671a2639d6b539515c562b81"
+    sha256 "695a41b0e5711cc0c0315010079d112119c5193493e817ea9fcba72a1c14f236"
     url "https://github.com/chenhunghan/0ma/releases/download/v#{version}/0ma_#{version}_aarch64.dmg"
   end
 
   on_intel do
-    sha256 "0a703646aa29930c943d35e1cbd0462b2f440dbea8919546eee257d5241a6aa8"
+    sha256 "1f8cdde6d12cdf9c7bccfd3631623de35b7044e242dc2a27da718284cc23faf4"
     url "https://github.com/chenhunghan/0ma/releases/download/v#{version}/0ma_#{version}_x64.dmg"
   end
 
