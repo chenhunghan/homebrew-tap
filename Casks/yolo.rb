@@ -17,7 +17,7 @@ cask "yolo" do
 
   app "yolo.app"
 
-  postflight do
-    system "xattr", "-cr", "#{appdir}/yolo.app"
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/yolo.app"]
   end
 end

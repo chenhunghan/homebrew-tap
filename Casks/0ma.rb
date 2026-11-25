@@ -17,7 +17,7 @@ cask "0ma" do
 
   app "0ma.app"
 
-  postflight do
-    system "xattr", "-cr", "#{appdir}/0ma.app"
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/0ma.app"]
   end
 end
